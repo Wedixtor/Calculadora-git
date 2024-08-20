@@ -1,6 +1,7 @@
 import dividedanger
 import Multiplier
 import sustraction
+import Suma
 from os import system
 
 
@@ -10,7 +11,7 @@ def Calculadora():
     seleccion = int(input("1.Addition \n2.Subtraction \n3.Multiplication \n4.Division.\n\nSelection: "))
 
     if seleccion == 1:
-        print("Hola")
+        print("The addition of the two numbers is:", Suma.adder())
     elif seleccion == 2:
         print("The sustraction of the two numbers is:", sustraction.sustration())
     elif seleccion == 3:
