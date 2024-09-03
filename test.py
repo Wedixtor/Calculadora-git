@@ -1,4 +1,4 @@
-# test_calculator.py
+# test.py
 
 import pytest
 from Suma import adder
