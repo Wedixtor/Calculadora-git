@@ -7,7 +7,7 @@ from dividedanger import dividedanger
 from os import system
 
 def main():
-    print("Welcome to the Calculator! \n")
+    print("Welcome to the Calculator!!! \n")
     print("Please choose a following option: \n ")
     seleccion = int(input("1.Addition \n2.Subtraction \n3.Multiplication \n4.Division.\n\nSelection: "))
 
