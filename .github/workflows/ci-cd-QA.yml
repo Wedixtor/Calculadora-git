@@ -1,8 +1,11 @@
 name: Python CI
 
-# Trigger de Ejecución: Solo cuando se abra un Pull Request hacia la rama QA
+# Trigger de Ejecución: Cuando se abra un Pull Request o se haga un Push a la rama QA
 on:
   pull_request:
+    branches:
+      - qa
+  push:
     branches:
       - qa
 
@@ -30,4 +33,4 @@ jobs:
       # Paso 4: Ejecutar pruebas
       - name: Run tests
         run: |
-          pytest  
+          pytest
