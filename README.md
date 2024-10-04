@@ -15,7 +15,7 @@ Este pipeline de GitHub Actions está configurado para automatizar el proceso de
 
 -Checkout del código: Clona el repositorio en el entorno de ejecución.
 -Configuración de Python: Establece Python 3.12 como la versión a utilizar.
--Instalación de dependencias: Instala las dependencias necesarias..
+-Instalación de dependencias: Instala las dependencias necesarias.
 -Instalación de herramientas de construcción: Instala setuptools y wheel para el empaquetado.
 -Ejecución de pruebas: Ejecuta pruebas automáticas usando pytest.
 -Empaquetado de la aplicación: Construye los archivos de distribución (sdist y bdist_wheel) usando setup.py.
