@@ -1,0 +1,13 @@
+#!/bin/sh
+FILES=$(git diff --cached --name-only --diff-filter=ACM)
+echo "Ejecutando linting..."
+for FILE in $FILES; do
+  if [[ "$FILE" =~ \.js$ ]]; then
+    eslint "$FILE"
+    if [ $? -ne 0 ]; then
+      echo "Errores de linting encontrados en el archivo $FILE. Commit abortado."
+      exit 1
+    fi
+  fi
+done
+exit 0
